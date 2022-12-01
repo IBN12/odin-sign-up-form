@@ -21,7 +21,7 @@ password
 : There will be two password types. The first one will be the initial password input, and the second will be the password confirmation input.
 
 ## **background-image**
-The background image next to the main form will be artwork created by [Yoshitaka Amano](http://google.com/search?q=Yoshitaka Amano).
+The background image next to the main form will be artwork created by [Yoshitaka-Amano](http://google.com/search?q=Yoshitaka+Amano).
 The source of the artwork is [character-design-references](characterdesignreferences.com/artists-of-the-week/yoshitaka-amano).
 
 ## **JavaScript for password types**
