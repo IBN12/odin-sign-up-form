@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-up Form</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <script src="./javascript/javascript.js" defer></script>
+    </head>
+
+    <body>
+        <div id="main-container">
+            <div class="main-item-one">
+                <img class="art" src="./images/yoshitaka_amano_art_1.jpg" alt="Yoshitaka Amano Art">
+                <div class="logo-section">
+                    <img class="logo" src="./images/triangle_logo.png" alt="Form Logo">
+                    <div class="logo-name">TRIBES</div>
+                </div>
+                <div class="image-creator">
+                    Art by <a href="http://google.com/search?q=Yoshitaka Amano">Yoshitaka Amano</a> on
+                    <a href="http://characterdesignreferences.com/artists-of-the-week/yoshitaka-amano"> character-design-references</a>
+                </div>
+            </div>
+
+            <div class="main-item-two">
+                <div class="item-two-header">
+                    <p>
+                        This is not a real online service! You know you need something<br />
+                        like this in your life to help you realize your deepest dreams. <br />
+                        Sign up <i>now</i> to get started. <br /><br />
+
+                        You <i>know</i> you want to.
+                    </p>
+                </div>
+
+                <div class="item-two-form">
+                    <p>Let's do this!</p>
+
+                    <form id="main-form" action="#" method="post">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" value="" />
+                        </div>
+
+                        <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" value="" />
+                        </div>
+
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" value="" />
+                        </div>
+
+                        <div>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" id="phone_number" name="phone_number" value="" />
+                        </div>
+
+                        <div>
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" name="pwd" value="" required />
+                            <div id="password_check"></div>
+                        </div>
+
+                        <div>
+                            <label for="con_pwd">CONFIRM PASSWORD</label>
+                            <input type="password" id="con_pwd" name="con_pwd" value="" required />
+                        </div>
+
+                        <div class="main-form-footer">
+                            <div id="button-section">
+                                <button type="submit">Create Account</button>
+                            </div>
+
+                            <p>Already have an account?<a href="#"> Log in</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

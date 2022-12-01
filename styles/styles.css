@@ -1,0 +1,201 @@
+/*body - The main body for the entire page. */
+html, body{
+    margin: 0;
+    padding: 0; 
+    height: 100vh;
+    background-color: #0e0e0e;
+}
+
+/* * - All elements on the page. */
+*{
+    box-sizing: border-box;
+}
+
+/*|Main Container|*/
+/* main-container - The main container for the entire page. */
+#main-container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    max-width: 65%;
+    margin: 0 auto;
+}
+/* .main-item-one - First item inside main-container. */
+.main-item-one{
+    width: 36%;
+}
+/*.main-item-two - Second item inside main-container*/
+.main-item-two{
+    width: 64%;
+}
+/*img[class="art"] - Conceptual art inside main-item-one. */
+img[class="art"]{
+    width: 100%;
+    height: 100%;
+}
+/* logo-section - Logo section on the image in main-item-one. */
+.logo-section{
+    position: relative;
+    bottom: 80%;
+    background-color: rgba(0, 0, 0, 0.26);
+    color: white;
+    width: 100%;
+}
+/* img[class="logo"] - Logo inside the logo section. */
+img[class="logo"]
+{
+    width: 60%;
+    height: 60%;
+}
+/* logo-name - The name next to the logo in the logo section. */
+.logo-name{
+    display: inline;
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    font-size: 3vh;
+    font-size: 2vw;
+    letter-spacing: 3px;
+}
+.image-creator{
+    position: relative;
+    bottom: 200px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.image-creator a{
+    color: black;
+    font-weight: bold;
+}
+
+/*|Item Two Header|*/
+/* item-two-header - Header item inside .main-item-two. */
+.item-two-header{
+    /* border: 1px solid black; */
+    padding: 30px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.2;
+    background-color: #E5E7EB;
+}
+.item-two-header p{
+    margin-top: 100px;
+}
+
+/* item-two-form - Form item inside .main-item-two. */
+.item-two-form{
+    background-color: white;
+}
+.item-two-form p:not(p:nth-child(2)){
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-left: 40px;
+    padding-top: 20px;
+}
+/* main-form - The main form inside item-two-form. */
+#main-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+#main-form > div:not(div[class="main-form-footer"]){
+    margin: 0 90px 20px 0;
+}
+#main-form input{
+    box-sizing: border-box;
+    width: 110%;
+    padding: 5px 0 5px 0;
+    border-radius: 3px; 
+    border: 1px solid #E5E7EB;
+}
+#main-form input:focus:not(input[type="password"]){
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 0.2px 0.2px 1px blue;
+}
+#main-form input, #main-form label{
+    margin-left: 40px;
+}
+#main-form label{
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color:#4d4e50;
+    font-weight: bold;
+}
+/* main-form-footer - The footer section inside the main-form. */
+.main-form-footer{
+    border-top: 3px outset #cbd0d6cb;
+    width: 100%;
+    background-color: #E5E7EB;
+    margin-top: 20px;
+}
+/* button-section - The button section inside the main-form container. */
+#button-section{
+    margin: 30px 0 30px 40px;
+}
+/* button - The button element inside the button section. */
+button{
+    padding: 10px 40px 10px 40px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(49, 49, 221);
+    color: white;
+    border: 1px solid rgb(49, 49, 221);
+}
+button:hover{
+    cursor: pointer;
+    background-color:rgba(49, 49, 221, 0.856);
+    border: 1px solid rgba(49, 49, 221, 0.856);
+}
+/* main-form-footer p - The paragraph login section. */
+.main-form-footer p {
+    margin-bottom: 220px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+/*a - The anchor link element in the main-form-footer container. */
+a{
+    text-decoration: none;
+    color:rgb(49, 49, 221);
+    font-size: 1em;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/*|Classes for user input of type password (Better UI/UX development)|*/
+/* password_valid - Will display a message letting the user know the passwords are valid and match. */
+.password_valid{
+    color: green;
+    margin-left: 40px;
+}
+
+/* password_invalid - Will display a message letting the user know the passwords are invalid and do not match. */
+.password_invalid{
+    color: red;
+    margin-left: 40px;
+}
+
+/* display_focus - Will add a default look to the input border when the user clicks on it. */
+#main-form .display_focus{
+    border: 1px solid blue;
+    box-shadow: 0.2px 0.2px 1px blue;
+    outline: none;
+}
+
+/* display_valid - Will display that the input is valid with green border. */
+#main-form .display_valid{
+    border: 1px solid green;
+    box-shadow: 0.2px 0.2px 1px green;
+    outline: none;
+}
+
+/* display_invalid - Will display that the input is invalid with red border. */
+#main-form .display_invalid{
+    border: 1px solid red;
+    outline: none;
+}
