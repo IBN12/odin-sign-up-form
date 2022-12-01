@@ -22,7 +22,7 @@ password
 
 ## **background-image**
 The background image next to the main form will be artwork created by [Yoshitaka-Amano](http://google.com/search?q=Yoshitaka+Amano).
-The source of the artwork is [character-design-references](characterdesignreferences.com/artists-of-the-week/yoshitaka-amano).
+The source of the artwork is [character-design-references](http://characterdesignreferences.com/artists-of-the-week/yoshitaka-amano).
 
 ## **JavaScript for password types**
 The javascript program is designed to determine if both user inputs of type password match. Passwords that match are **valid**, and passwords that don't match are **invalid**.  Matching passwords will initiate a section that displays a message in the color green. Passwords that don't match will initiate a section that displays
